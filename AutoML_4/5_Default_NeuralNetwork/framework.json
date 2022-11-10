@@ -1,0 +1,564 @@
+{
+    "uid": "e19ce2d5-5e13-4c21-9e61-d001e033193c",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "STUDENTID": {
+                            "STUDENT10": 0,
+                            "STUDENT100": 1,
+                            "STUDENT101": 2,
+                            "STUDENT102": 3,
+                            "STUDENT103": 4,
+                            "STUDENT104": 5,
+                            "STUDENT106": 6,
+                            "STUDENT107": 7,
+                            "STUDENT108": 8,
+                            "STUDENT109": 9,
+                            "STUDENT11": 10,
+                            "STUDENT111": 11,
+                            "STUDENT113": 12,
+                            "STUDENT114": 13,
+                            "STUDENT115": 14,
+                            "STUDENT116": 15,
+                            "STUDENT117": 16,
+                            "STUDENT118": 17,
+                            "STUDENT119": 18,
+                            "STUDENT12": 19,
+                            "STUDENT120": 20,
+                            "STUDENT121": 21,
+                            "STUDENT122": 22,
+                            "STUDENT123": 23,
+                            "STUDENT124": 24,
+                            "STUDENT125": 25,
+                            "STUDENT126": 26,
+                            "STUDENT127": 27,
+                            "STUDENT128": 28,
+                            "STUDENT129": 29,
+                            "STUDENT13": 30,
+                            "STUDENT130": 31,
+                            "STUDENT132": 32,
+                            "STUDENT134": 33,
+                            "STUDENT136": 34,
+                            "STUDENT137": 35,
+                            "STUDENT138": 36,
+                            "STUDENT14": 37,
+                            "STUDENT140": 38,
+                            "STUDENT142": 39,
+                            "STUDENT143": 40,
+                            "STUDENT144": 41,
+                            "STUDENT145": 42,
+                            "STUDENT15": 43,
+                            "STUDENT16": 44,
+                            "STUDENT17": 45,
+                            "STUDENT18": 46,
+                            "STUDENT2": 47,
+                            "STUDENT20": 48,
+                            "STUDENT21": 49,
+                            "STUDENT22": 50,
+                            "STUDENT23": 51,
+                            "STUDENT25": 52,
+                            "STUDENT26": 53,
+                            "STUDENT27": 54,
+                            "STUDENT29": 55,
+                            "STUDENT31": 56,
+                            "STUDENT32": 57,
+                            "STUDENT36": 58,
+                            "STUDENT37": 59,
+                            "STUDENT38": 60,
+                            "STUDENT39": 61,
+                            "STUDENT40": 62,
+                            "STUDENT42": 63,
+                            "STUDENT43": 64,
+                            "STUDENT44": 65,
+                            "STUDENT45": 66,
+                            "STUDENT46": 67,
+                            "STUDENT47": 68,
+                            "STUDENT48": 69,
+                            "STUDENT49": 70,
+                            "STUDENT5": 71,
+                            "STUDENT51": 72,
+                            "STUDENT52": 73,
+                            "STUDENT53": 74,
+                            "STUDENT54": 75,
+                            "STUDENT56": 76,
+                            "STUDENT57": 77,
+                            "STUDENT58": 78,
+                            "STUDENT6": 79,
+                            "STUDENT60": 80,
+                            "STUDENT63": 81,
+                            "STUDENT66": 82,
+                            "STUDENT67": 83,
+                            "STUDENT68": 84,
+                            "STUDENT69": 85,
+                            "STUDENT7": 86,
+                            "STUDENT70": 87,
+                            "STUDENT71": 88,
+                            "STUDENT72": 89,
+                            "STUDENT73": 90,
+                            "STUDENT74": 91,
+                            "STUDENT75": 92,
+                            "STUDENT76": 93,
+                            "STUDENT77": 94,
+                            "STUDENT79": 95,
+                            "STUDENT8": 96,
+                            "STUDENT80": 97,
+                            "STUDENT81": 98,
+                            "STUDENT82": 99,
+                            "STUDENT84": 100,
+                            "STUDENT85": 101,
+                            "STUDENT86": 102,
+                            "STUDENT87": 103,
+                            "STUDENT89": 104,
+                            "STUDENT9": 105,
+                            "STUDENT90": 106,
+                            "STUDENT91": 107,
+                            "STUDENT92": 108,
+                            "STUDENT93": 109,
+                            "STUDENT94": 110,
+                            "STUDENT95": 111,
+                            "STUDENT96": 112,
+                            "STUDENT97": 113,
+                            "STUDENT98": 114
+                        }
+                    },
+                    "columns": [
+                        "STUDENTID"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        34.60461683320362,
+                        0.5946261404559845,
+                        0.49767635651083925,
+                        0.4786813161897337,
+                        0.8108996849424599,
+                        0.4848316495393651,
+                        0.4898979485566356,
+                        0.4998765279645329,
+                        0.9253627917180896,
+                        1.063317788242474,
+                        0.8209867260739205,
+                        1.1593006737366283,
+                        1.1286516713920538,
+                        1.3953872667265748,
+                        0.5374328043619868,
+                        0.8102904693495987,
+                        1.2295850058837339,
+                        0.9925373118934553,
+                        0.5678153450884977,
+                        0.564325835696027,
+                        0.40544984247122995,
+                        0.6199252134194866,
+                        0.4340766021921069,
+                        0.6278405955679138,
+                        0.40123266856150647,
+                        0.5689737591013784,
+                        0.6714233596222021,
+                        0.6294117269999409,
+                        0.8061492065429803,
+                        1.3280553973934799,
+                        0.8706146229380285,
+                        3.199073940076108
+                    ],
+                    "mean": [
+                        55.62222222222222,
+                        1.6222222222222222,
+                        1.548148148148148,
+                        1.9777777777777779,
+                        3.585185185185185,
+                        1.6222222222222222,
+                        1.6,
+                        1.511111111111111,
+                        1.5333333333333334,
+                        1.651851851851852,
+                        1.8074074074074074,
+                        2.251851851851852,
+                        2.6148148148148147,
+                        2.8740740740740742,
+                        1.1925925925925926,
+                        2.348148148148148,
+                        2.8814814814814813,
+                        2.1925925925925926,
+                        1.9407407407407407,
+                        1.9925925925925927,
+                        1.2074074074074075,
+                        1.2296296296296296,
+                        1.2518518518518518,
+                        1.362962962962963,
+                        1.1555555555555554,
+                        2.5185185185185186,
+                        2.1259259259259258,
+                        2.3703703703703702,
+                        1.8222222222222222,
+                        3.0814814814814815,
+                        2.6592592592592594,
+                        4.466666666666667
+                    ],
+                    "var": [
+                        1197.4795061728396,
+                        0.35358024691358025,
+                        0.24768175582990398,
+                        0.22913580246913579,
+                        0.6575582990397807,
+                        0.23506172839506173,
+                        0.24,
+                        0.24987654320987646,
+                        0.8562962962962963,
+                        1.130644718792867,
+                        0.6740192043895746,
+                        1.3439780521262004,
+                        1.2738545953360767,
+                        1.9471056241426612,
+                        0.28883401920438956,
+                        0.656570644718793,
+                        1.5118792866941018,
+                        0.9851303155006861,
+                        0.3224142661179698,
+                        0.3184636488340193,
+                        0.16438957475994517,
+                        0.384307270233196,
+                        0.18842249657064467,
+                        0.39418381344307274,
+                        0.1609876543209877,
+                        0.3237311385459533,
+                        0.4508093278463649,
+                        0.3961591220850481,
+                        0.6498765432098766,
+                        1.7637311385459535,
+                        0.7579698216735254,
+                        10.234074074074073
+                    ],
+                    "n_samples_seen": 135,
+                    "n_features_in": 32,
+                    "columns": [
+                        "STUDENTID",
+                        "AGE",
+                        "GENDER",
+                        "HS_TYPE",
+                        "SCHOLARSHIP",
+                        "WORK",
+                        "ACTIVITY",
+                        "PARTNER",
+                        "SALARY",
+                        "TRANSPORT",
+                        "LIVING",
+                        "MOTHER_EDU",
+                        "FATHER_EDU",
+                        "#_SIBLINGS",
+                        "KIDS",
+                        "MOTHER_JOB",
+                        "FATHER_JOB",
+                        "STUDY_HRS",
+                        "READ_FREQ",
+                        "READ_FREQ_SCI",
+                        "ATTEND_DEPT",
+                        "IMPACT",
+                        "ATTEND",
+                        "PREP_STUDY",
+                        "PREP_EXAM",
+                        "NOTES",
+                        "LISTENS",
+                        "LIKES_DISCUSS",
+                        "CLASSROOM",
+                        "CUML_GPA",
+                        "EXP_GPA",
+                        "COURSE ID"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "STUDENTID": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "AGE": [
+                        "scale_normal"
+                    ],
+                    "GENDER": [
+                        "scale_normal"
+                    ],
+                    "HS_TYPE": [
+                        "scale_normal"
+                    ],
+                    "SCHOLARSHIP": [
+                        "scale_normal"
+                    ],
+                    "WORK": [
+                        "scale_normal"
+                    ],
+                    "ACTIVITY": [
+                        "scale_normal"
+                    ],
+                    "PARTNER": [
+                        "scale_normal"
+                    ],
+                    "SALARY": [
+                        "scale_normal"
+                    ],
+                    "TRANSPORT": [
+                        "scale_normal"
+                    ],
+                    "LIVING": [
+                        "scale_normal"
+                    ],
+                    "MOTHER_EDU": [
+                        "scale_normal"
+                    ],
+                    "FATHER_EDU": [
+                        "scale_normal"
+                    ],
+                    "#_SIBLINGS": [
+                        "scale_normal"
+                    ],
+                    "KIDS": [
+                        "scale_normal"
+                    ],
+                    "MOTHER_JOB": [
+                        "scale_normal"
+                    ],
+                    "FATHER_JOB": [
+                        "scale_normal"
+                    ],
+                    "STUDY_HRS": [
+                        "scale_normal"
+                    ],
+                    "READ_FREQ": [
+                        "scale_normal"
+                    ],
+                    "READ_FREQ_SCI": [
+                        "scale_normal"
+                    ],
+                    "ATTEND_DEPT": [
+                        "scale_normal"
+                    ],
+                    "IMPACT": [
+                        "scale_normal"
+                    ],
+                    "ATTEND": [
+                        "scale_normal"
+                    ],
+                    "PREP_STUDY": [
+                        "scale_normal"
+                    ],
+                    "PREP_EXAM": [
+                        "scale_normal"
+                    ],
+                    "NOTES": [
+                        "scale_normal"
+                    ],
+                    "LISTENS": [
+                        "scale_normal"
+                    ],
+                    "LIKES_DISCUSS": [
+                        "scale_normal"
+                    ],
+                    "CLASSROOM": [
+                        "scale_normal"
+                    ],
+                    "CUML_GPA": [
+                        "scale_normal"
+                    ],
+                    "EXP_GPA": [
+                        "scale_normal"
+                    ],
+                    "COURSE ID": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "49cefb7d-bfb1-49e6-a1ad-1a6ce2b8c2b4",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "num_class": 8,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "STUDENTID": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "AGE": [
+                    "scale_normal"
+                ],
+                "GENDER": [
+                    "scale_normal"
+                ],
+                "HS_TYPE": [
+                    "scale_normal"
+                ],
+                "SCHOLARSHIP": [
+                    "scale_normal"
+                ],
+                "WORK": [
+                    "scale_normal"
+                ],
+                "ACTIVITY": [
+                    "scale_normal"
+                ],
+                "PARTNER": [
+                    "scale_normal"
+                ],
+                "SALARY": [
+                    "scale_normal"
+                ],
+                "TRANSPORT": [
+                    "scale_normal"
+                ],
+                "LIVING": [
+                    "scale_normal"
+                ],
+                "MOTHER_EDU": [
+                    "scale_normal"
+                ],
+                "FATHER_EDU": [
+                    "scale_normal"
+                ],
+                "#_SIBLINGS": [
+                    "scale_normal"
+                ],
+                "KIDS": [
+                    "scale_normal"
+                ],
+                "MOTHER_JOB": [
+                    "scale_normal"
+                ],
+                "FATHER_JOB": [
+                    "scale_normal"
+                ],
+                "STUDY_HRS": [
+                    "scale_normal"
+                ],
+                "READ_FREQ": [
+                    "scale_normal"
+                ],
+                "READ_FREQ_SCI": [
+                    "scale_normal"
+                ],
+                "ATTEND_DEPT": [
+                    "scale_normal"
+                ],
+                "IMPACT": [
+                    "scale_normal"
+                ],
+                "ATTEND": [
+                    "scale_normal"
+                ],
+                "PREP_STUDY": [
+                    "scale_normal"
+                ],
+                "PREP_EXAM": [
+                    "scale_normal"
+                ],
+                "NOTES": [
+                    "scale_normal"
+                ],
+                "LISTENS": [
+                    "scale_normal"
+                ],
+                "LIKES_DISCUSS": [
+                    "scale_normal"
+                ],
+                "CLASSROOM": [
+                    "scale_normal"
+                ],
+                "CUML_GPA": [
+                    "scale_normal"
+                ],
+                "EXP_GPA": [
+                    "scale_normal"
+                ],
+                "COURSE ID": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_4/X.data",
+            "y_path": "AutoML_4/y.data",
+            "results_path": "AutoML_4"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "num_class": 8,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 2.38751395502285,
+    "train_time": 1.927441120147705,
+    "is_stacked": false
+}

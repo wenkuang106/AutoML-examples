@@ -1,0 +1,242 @@
+{
+    "uid": "0e07c6f1-580d-4c1b-abb1-9abbc37c0957",
+    "name": "6_Default_RandomForest",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "STUDENTID": {
+                            "STUDENT10": 0,
+                            "STUDENT100": 1,
+                            "STUDENT101": 2,
+                            "STUDENT102": 3,
+                            "STUDENT103": 4,
+                            "STUDENT104": 5,
+                            "STUDENT106": 6,
+                            "STUDENT107": 7,
+                            "STUDENT108": 8,
+                            "STUDENT109": 9,
+                            "STUDENT11": 10,
+                            "STUDENT111": 11,
+                            "STUDENT113": 12,
+                            "STUDENT114": 13,
+                            "STUDENT115": 14,
+                            "STUDENT116": 15,
+                            "STUDENT117": 16,
+                            "STUDENT118": 17,
+                            "STUDENT119": 18,
+                            "STUDENT12": 19,
+                            "STUDENT120": 20,
+                            "STUDENT121": 21,
+                            "STUDENT122": 22,
+                            "STUDENT123": 23,
+                            "STUDENT124": 24,
+                            "STUDENT125": 25,
+                            "STUDENT126": 26,
+                            "STUDENT127": 27,
+                            "STUDENT128": 28,
+                            "STUDENT129": 29,
+                            "STUDENT13": 30,
+                            "STUDENT130": 31,
+                            "STUDENT132": 32,
+                            "STUDENT134": 33,
+                            "STUDENT136": 34,
+                            "STUDENT137": 35,
+                            "STUDENT138": 36,
+                            "STUDENT14": 37,
+                            "STUDENT140": 38,
+                            "STUDENT142": 39,
+                            "STUDENT143": 40,
+                            "STUDENT144": 41,
+                            "STUDENT145": 42,
+                            "STUDENT15": 43,
+                            "STUDENT16": 44,
+                            "STUDENT17": 45,
+                            "STUDENT18": 46,
+                            "STUDENT2": 47,
+                            "STUDENT20": 48,
+                            "STUDENT21": 49,
+                            "STUDENT22": 50,
+                            "STUDENT23": 51,
+                            "STUDENT25": 52,
+                            "STUDENT26": 53,
+                            "STUDENT27": 54,
+                            "STUDENT29": 55,
+                            "STUDENT31": 56,
+                            "STUDENT32": 57,
+                            "STUDENT36": 58,
+                            "STUDENT37": 59,
+                            "STUDENT38": 60,
+                            "STUDENT39": 61,
+                            "STUDENT40": 62,
+                            "STUDENT42": 63,
+                            "STUDENT43": 64,
+                            "STUDENT44": 65,
+                            "STUDENT45": 66,
+                            "STUDENT46": 67,
+                            "STUDENT47": 68,
+                            "STUDENT48": 69,
+                            "STUDENT49": 70,
+                            "STUDENT5": 71,
+                            "STUDENT51": 72,
+                            "STUDENT52": 73,
+                            "STUDENT53": 74,
+                            "STUDENT54": 75,
+                            "STUDENT56": 76,
+                            "STUDENT57": 77,
+                            "STUDENT58": 78,
+                            "STUDENT6": 79,
+                            "STUDENT60": 80,
+                            "STUDENT63": 81,
+                            "STUDENT66": 82,
+                            "STUDENT67": 83,
+                            "STUDENT68": 84,
+                            "STUDENT69": 85,
+                            "STUDENT7": 86,
+                            "STUDENT70": 87,
+                            "STUDENT71": 88,
+                            "STUDENT72": 89,
+                            "STUDENT73": 90,
+                            "STUDENT74": 91,
+                            "STUDENT75": 92,
+                            "STUDENT76": 93,
+                            "STUDENT77": 94,
+                            "STUDENT79": 95,
+                            "STUDENT8": 96,
+                            "STUDENT80": 97,
+                            "STUDENT81": 98,
+                            "STUDENT82": 99,
+                            "STUDENT84": 100,
+                            "STUDENT85": 101,
+                            "STUDENT86": 102,
+                            "STUDENT87": 103,
+                            "STUDENT89": 104,
+                            "STUDENT9": 105,
+                            "STUDENT90": 106,
+                            "STUDENT91": 107,
+                            "STUDENT92": 108,
+                            "STUDENT93": 109,
+                            "STUDENT94": 110,
+                            "STUDENT95": 111,
+                            "STUDENT96": 112,
+                            "STUDENT97": 113,
+                            "STUDENT98": 114
+                        }
+                    },
+                    "columns": [
+                        "STUDENTID"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5,
+                "6": 6,
+                "7": 7
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "STUDENTID": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "a1c5db48-4cd0-448f-9827-f1177297eb21",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "criterion": "gini",
+                "max_features": 0.9,
+                "min_samples_split": 30,
+                "max_depth": 4,
+                "seed": 6,
+                "eval_metric_name": "logloss",
+                "num_class": 8,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 100,
+            "train_cant_improve_limit": 1,
+            "min_steps": 1,
+            "max_steps": 50,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "STUDENTID": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_4/X.data",
+            "y_path": "AutoML_4/y.data",
+            "results_path": "AutoML_4"
+        },
+        "learner": {
+            "model_type": "Random Forest",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "criterion": "gini",
+            "max_features": 0.9,
+            "min_samples_split": 30,
+            "max_depth": 4,
+            "seed": 6,
+            "eval_metric_name": "logloss",
+            "num_class": 8,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "6_Default_RandomForest",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "6_Default_RandomForest/learner_fold_0.random_forest"
+    ],
+    "predictions_fname": "6_Default_RandomForest/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.8497988797886709,
+    "train_time": 26.52523183822632,
+    "is_stacked": false
+}

@@ -1,0 +1,16 @@
+if (STUDENTID <= 74.5) and (STUDENTID > 9.5) and (PARTNER > 1.5) then class: 2 (proba: 38.89%) | based on 36 samples
+
+if (STUDENTID <= 74.5) and (STUDENTID > 9.5) and (PARTNER <= 1.5) then class: 1 (proba: 33.33%) | based on 36 samples
+
+if (STUDENTID > 74.5) and (STUDENTID > 87.5) and (FATHER_JOB > 2.5) then class: 4 (proba: 38.89%) | based on 18 samples
+
+if (STUDENTID > 74.5) and (STUDENTID > 87.5) and (FATHER_JOB <= 2.5) then class: 7 (proba: 57.14%) | based on 14 samples
+
+if (STUDENTID > 74.5) and (STUDENTID <= 87.5) and (SALARY <= 1.5) then class: 5 (proba: 80.0%) | based on 10 samples
+
+if (STUDENTID <= 74.5) and (STUDENTID <= 9.5) and (GENDER > 1.5) then class: 7 (proba: 87.5%) | based on 8 samples
+
+if (STUDENTID <= 74.5) and (STUDENTID <= 9.5) and (GENDER <= 1.5) then class: 0 (proba: 50.0%) | based on 8 samples
+
+if (STUDENTID > 74.5) and (STUDENTID <= 87.5) and (SALARY > 1.5) then class: 2 (proba: 40.0%) | based on 5 samples
+

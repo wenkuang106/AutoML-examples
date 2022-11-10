@@ -1,0 +1,143 @@
+{
+    "columns": [
+        "STUDENTID",
+        "AGE",
+        "GENDER",
+        "HS_TYPE",
+        "SCHOLARSHIP",
+        "WORK",
+        "ACTIVITY",
+        "PARTNER",
+        "SALARY",
+        "TRANSPORT",
+        "LIVING",
+        "MOTHER_EDU",
+        "FATHER_EDU",
+        "#_SIBLINGS",
+        "KIDS",
+        "MOTHER_JOB",
+        "FATHER_JOB",
+        "STUDY_HRS",
+        "READ_FREQ",
+        "READ_FREQ_SCI",
+        "ATTEND_DEPT",
+        "IMPACT",
+        "ATTEND",
+        "PREP_STUDY",
+        "PREP_EXAM",
+        "NOTES",
+        "LISTENS",
+        "LIKES_DISCUSS",
+        "CLASSROOM",
+        "CUML_GPA",
+        "EXP_GPA",
+        "COURSE ID"
+    ],
+    "rows": 108,
+    "cols": 32,
+    "target_is_numeric": true,
+    "columns_info": {
+        "STUDENTID": [
+            "categorical",
+            "many_categories"
+        ],
+        "AGE": [
+            "scale"
+        ],
+        "GENDER": [
+            "scale"
+        ],
+        "HS_TYPE": [
+            "scale"
+        ],
+        "SCHOLARSHIP": [
+            "scale"
+        ],
+        "WORK": [
+            "scale"
+        ],
+        "ACTIVITY": [
+            "scale"
+        ],
+        "PARTNER": [
+            "scale"
+        ],
+        "SALARY": [
+            "scale"
+        ],
+        "TRANSPORT": [
+            "scale"
+        ],
+        "LIVING": [
+            "scale"
+        ],
+        "MOTHER_EDU": [
+            "scale"
+        ],
+        "FATHER_EDU": [
+            "scale"
+        ],
+        "#_SIBLINGS": [
+            "scale"
+        ],
+        "KIDS": [
+            "scale"
+        ],
+        "MOTHER_JOB": [
+            "scale"
+        ],
+        "FATHER_JOB": [
+            "scale"
+        ],
+        "STUDY_HRS": [
+            "scale"
+        ],
+        "READ_FREQ": [
+            "scale"
+        ],
+        "READ_FREQ_SCI": [
+            "scale"
+        ],
+        "ATTEND_DEPT": [
+            "scale"
+        ],
+        "IMPACT": [
+            "scale"
+        ],
+        "ATTEND": [
+            "scale"
+        ],
+        "PREP_STUDY": [
+            "scale"
+        ],
+        "PREP_EXAM": [
+            "scale"
+        ],
+        "NOTES": [
+            "scale"
+        ],
+        "LISTENS": [
+            "scale"
+        ],
+        "LIKES_DISCUSS": [
+            "scale"
+        ],
+        "CLASSROOM": [
+            "scale"
+        ],
+        "CUML_GPA": [
+            "scale"
+        ],
+        "EXP_GPA": [
+            "scale"
+        ],
+        "COURSE ID": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 32,
+    "is_sample_weighted": false,
+    "n_classes": 5,
+    "num_class": 5
+}
